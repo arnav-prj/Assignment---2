@@ -1,0 +1,155 @@
+/* whole page dark */
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #888;
+  text-decoration: none;
+}
+
+.active-link {
+  color: white !important;
+}
+
+.get-started-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+/* FILTER BUTTONS */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: #888;
+  cursor: pointer;
+  &:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+  }
+}
+
+.filter-btn.active {
+  background-color: #ff4500;
+  color: white;
+  border-color: #ff4500;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #111;
+  border: 3px solid white;
+  border-radius: 14px;
+  width: 30%;
+  min-width: 250px;
+  overflow: hidden;
+}
+
+/* THIS FIXES THE IMAGE SIZE */
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tag-tech      { background-color: #3a1000; color: #ff6b35; }
+.tag-saas      { background-color: #001a3a; color: #64c8ff; }
+.tag-marketing { background-color: #2a1a00; color: #ffaa33; }
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-date {
+  font-size: 12px;
+  color: #666;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-top: 1px solid #222;
+  color: #555;
+  font-size: 13px;
+}
+.card:hover {
+  border-color: #ff4500;
+  transition: border-color 0.3s ease;
+}
